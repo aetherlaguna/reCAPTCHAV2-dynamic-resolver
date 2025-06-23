@@ -34,7 +34,7 @@ stealth(driver,
 cookie_found = False
 
 try:
-    driver.get('https://portalbnmp.cnj.jus.br/#/captcha/')
+    driver.get('site url')
     wait = WebDriverWait(driver, 20)
 
     wait.until(EC.frame_to_be_available_and_switch_to_it((By.CSS_SELECTOR, 'iframe[title="reCAPTCHA"]')))
@@ -56,7 +56,7 @@ try:
     end_time = time.time() + timeout
     while time.time() < end_time:
         cookies = driver.get_cookies()
-        if any(cookie['name'] == 'portalbnmp' for cookie in cookies):
+        if any(cookie['name'] == 'cookie name' for cookie in cookies):
             cookie_found = True
             break
         time.sleep(1)
