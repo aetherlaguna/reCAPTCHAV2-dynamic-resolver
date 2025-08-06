@@ -99,3 +99,5 @@ This script can fail for several reasons. Here are the most common errors and th
 ### The Ultimate Solution: When This Script Fails
 
 If you consistently receive an image challenge, it means the target website's security is too strong for this method. The industry-standard solution for robust CAPTCHA solving is to integrate a **third-party CAPTCHA-solving service** (e.g., 2Captcha, Anti-Captcha). These services use human workers to solve CAPTCHAs via an API and are far more reliable, though they are paid services.
+
+author: aetherlaguna
